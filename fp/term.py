@@ -29,6 +29,11 @@ add= lambda m,n: lambda f,x: n_temp(m, f, n_temp(n, f, x))
 
 iszero= lambda n: n_temp(n, lambda x: false, true)
 
+Y = lambda f: (lambda x: x(x))(lambda y: f(lambda *args: y(y)(*args)))
+
+Fac = lambda fac: lambda n: (1 if n<2 else n*fac(n-1))
+
+fac = Y(Fac)
 
 if __name__ == '__main__':
     print(fst(pair(x,y)))
@@ -41,3 +46,4 @@ if __name__ == '__main__':
 
     print(iszero(0)(1,2))
 
+    print(fac(4))
