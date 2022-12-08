@@ -1,1 +1,1 @@
-from .types import Immutable, String
+from .type import Immutable, String,Numeral

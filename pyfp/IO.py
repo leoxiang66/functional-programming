@@ -1,4 +1,4 @@
-from .types import String,Numeral
+from .type import String,Numeral
 
 def read_input(prompt:str):
     text = input(prompt)
