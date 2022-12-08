@@ -6,7 +6,7 @@ with open("README.md", "r") as readme_file:
 requirements = []
 
 setup(
-    name="pyfp",
+    name="fun2py",
     version="0.0.1",
     author="Tao Xiang",
     author_email="tao.xiang@tum.de",
