@@ -7,7 +7,7 @@ requirements = []
 
 setup(
     name="fun2py",
-    version="0.0.1",
+    version="0.0.2",
     author="Tao Xiang",
     author_email="tao.xiang@tum.de",
     description="A package for functional programming in python",

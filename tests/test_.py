@@ -1,19 +1,19 @@
 from env import *
-import pyfp
-from pyfp.interface import val
+import fun2py
+from fun2py.interface import val
 
 
-a= pyfp.Numeral(3)
-b = pyfp.Numeral(4)
-li1 = pyfp.List([1, 2, 3, 4])
-li2 = pyfp.List([2, 3, 4, 5])
+a= fun2py.Numeral(3)
+b = fun2py.Numeral(4)
+li1 = fun2py.List([1, 2, 3, 4])
+li2 = fun2py.List([2, 3, 4, 5])
 
 
 def test_elementwise_add():
     tmp = []
     for i in range(len(li1)):
         tmp.append(li1[i] + li2[i])
-    result = pyfp.List(tmp)
+    result = fun2py.List(tmp)
     assert result[0] == li1[0] + li2[0]
 
 
